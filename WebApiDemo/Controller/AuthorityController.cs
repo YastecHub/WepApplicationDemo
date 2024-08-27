@@ -4,6 +4,7 @@ using WebAPIDemo.Authority;
 
 namespace WebApiDemo.Controllers
 {
+    [ApiVersion("1.0")]
     [ApiController]
     public class AuthorityController : ControllerBase
     {

@@ -9,6 +9,7 @@ using WebAPIDemo.Filters.ExceptionFilters;
 
 namespace WebAPIDemo.Controllers.V2
 {
+    [ApiVersion("2.0")]
     [ApiController]
     [Route("api/[controller]")]
     [JwtTokenAuthFilter]
@@ -64,6 +65,7 @@ namespace WebAPIDemo.Controllers.V2
             shirtToUpdate.Size = shirt.Size;
             shirtToUpdate.Color = shirt.Color;
             shirtToUpdate.Gender = shirt.Gender;
+            shirtToUpdate.Description = shirt.Description;
 
             db.SaveChanges();
 

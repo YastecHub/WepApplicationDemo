@@ -22,6 +22,8 @@ builder.Services.AddSession(options =>
     options.IdleTimeout = TimeSpan.FromHours(15);
     options.Cookie.IsEssential = true;
 });
+
+
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddControllersWithViews();
